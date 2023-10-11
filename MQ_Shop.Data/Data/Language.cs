@@ -13,5 +13,7 @@ namespace MQ_Shop.Data.Data
         public string Name { get; set; }
 
         public bool IsDefault { get; set; }
+        public ICollection<producttransaction> producttransactions { get; set; }
+        public ICollection<CategoriesTransaction> categoriesTransactions { get; set; }
     }
 }

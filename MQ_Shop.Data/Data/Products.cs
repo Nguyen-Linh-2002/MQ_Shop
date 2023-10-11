@@ -8,11 +8,17 @@ namespace MQ_Shop.Data.Data
 {
    public class Products
     {
-        public Guid id { get; set; }
+        public int id { get; set; }
         public decimal price { get; set; }
         public int stock { get; set; }
         public int viewcount { get; set; }
         public string seoAlias { get; set; }
         public DateTime datecreate  { get; set; }
+        public bool? IsFeatured { get; set; }
+        public Category category { get; set; }
+        public ICollection<OrderDetail> orderDetails { get; set; }
+        public ICollection<producttransaction> producttransactions { get; set; }
+        public ICollection<Cart> carts { get; set; }
+        public ICollection<ProductImg> productImgs { get; set; }
     }
 }

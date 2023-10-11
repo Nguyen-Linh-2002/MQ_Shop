@@ -9,14 +9,14 @@ namespace MQ_Shop.Data.Data
 {
     public class Promotion
     {
-      public Guid  id { get; set; }
+      public int  id { get; set; }
         public DateTime fromdate { get; set; }
         public DateTime todate { get; set; }
         public bool applyforall { get; set; }
        public decimal? discountpercent { get; set; }
         public decimal? discountamount { get; set; }
-        public Guid productcategoryID { get; set; }
-        public Guid productsid { get; set; }
+        public string productcategoryID { get; set; }
+        public string productsid { get; set; }
         public string name { get; set; }
         public status status { get; set; }
 

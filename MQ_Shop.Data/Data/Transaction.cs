@@ -9,14 +9,17 @@ namespace MQ_Shop.Data.Data
 {
      public class Transaction
     {
-       public Guid id { get; set; }
+       public int id { get; set; }
        public DateTime transactiondate { get; set; }
        public string externaltransactionID { get; set; }
-    public decimal amount { get; set; }
+        public decimal amount { get; set; }
         public decimal fee { get; set; }
         public TransactionStatus status{ get; set; }
         public string result { get; set; }
         public string Message { get; set; }
         public string provider { get; set; }
+        public Guid UserId { get; set; }
+
+        public User User { get; set; }
     }
 }

@@ -8,9 +8,11 @@ namespace MQ_Shop.Data.Data
 {
    public class OrderDetail
     {
-      public Guid  id { get; set; }
-      public Guid productid { get; set; }
+      public int  orderid { get; set; }
+      public int productid { get; set; }
       public int   quantily  { get; set; }
       public decimal price { get; set; }
+        public Order order { get; set; }
+        public Products products { get; set; }
     }
 }
