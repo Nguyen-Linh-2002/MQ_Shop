@@ -13,30 +13,19 @@ namespace MQ_Shop.Data.Data
         public MyDbContext(DbContextOptions options) : base(options) { }
         public DbSet<Products> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
-
         public DbSet<Config> Configs { get; set; }
         public DbSet<User> users { get; set; }
         public DbSet<Roles> roles { get; set; }
-
         public DbSet<Cart> Carts { get; set; }
-
         public DbSet<CategoriesTransaction> CategoryTranslations { get; set; }
-
         public DbSet<Contact> Contacts { get; set; }
-
         public DbSet<Language> Languages { get; set; }
-
         public DbSet<Order> Orders { get; set; }
-
         public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<producttransaction> ProductTranslations { get; set; }
-
         public DbSet<Promotion> Promotions { get; set; }
-
         public DbSet<Transaction> Transactions { get; set; }
-
         public DbSet<ProductImg> ProductImages { get; set; }
-
         public DbSet<Slide> Slides { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -16,4 +16,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MQ_Shop.Data\MQ_Shop.Data.csproj" />
+  </ItemGroup>
+
 </Project>
