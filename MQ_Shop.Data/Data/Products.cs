@@ -9,7 +9,7 @@ namespace MQ_Shop.Data.Data
    public class Products
     {
         public int id { get; set; }
-        public decimal price { get; set; }
+        public double price { get; set; }
         public int stock { get; set; }
         public int viewcount { get; set; }
         public string seoAlias { get; set; }
