@@ -30,6 +30,7 @@ namespace MQ_Shop.WebApp
             {
                 options.UseSqlServer(Configuration.GetConnectionString("MyDb"));
             });
+
             services.AddControllersWithViews();
         }
 

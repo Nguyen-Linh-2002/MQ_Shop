@@ -12,8 +12,8 @@ namespace MQ_Shop.Data.Data
        public int id { get; set; }
        public DateTime transactiondate { get; set; }
        public string externaltransactionID { get; set; }
-        public decimal amount { get; set; }
-        public decimal fee { get; set; }
+        public double amount { get; set; }
+        public double fee { get; set; }
         public TransactionStatus status{ get; set; }
         public string result { get; set; }
         public string Message { get; set; }

@@ -13,8 +13,8 @@ namespace MQ_Shop.Data.Data
         public DateTime fromdate { get; set; }
         public DateTime todate { get; set; }
         public bool applyforall { get; set; }
-       public decimal? discountpercent { get; set; }
-        public decimal? discountamount { get; set; }
+       public double? discountpercent { get; set; }
+        public double? discountamount { get; set; }
         public string productcategoryID { get; set; }
         public string productsid { get; set; }
         public string name { get; set; }
